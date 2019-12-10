@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c5d4727-93da-4030-98f5-7eec9c437365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README_zh.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentence2vec/SIF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentence2vec/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentence2vec/SIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentence2vec/SIF.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentence2vec/SIF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="456">
+              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -93,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="245" />
     <option name="y" value="101" />
     <option name="width" value="1456" />
@@ -185,18 +181,18 @@
       <option name="presentableId" value="Default" />
       <updated>1575462625342</updated>
       <workItem from="1575462628566" duration="797000" />
-      <workItem from="1575961255716" duration="2920000" />
+      <workItem from="1575961255716" duration="5827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3717000" />
+    <option name="totallyTimeSpent" value="6624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="101" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -262,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sentence2vec/SIF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="456">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
     </entry>
