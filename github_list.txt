@@ -1,2 +1,3 @@
 Reference
 [1] https://github.com/PrincetonML/SIF
+[2] https://github.com/UKPLab/arxiv2018-xling-sentence-embeddings

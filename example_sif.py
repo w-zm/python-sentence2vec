@@ -1,5 +1,5 @@
 from sentence2vec.utils import glove2w2v
-from sentence2vec.SIF import SIF
+from sentence2vec import SIF
 
 ######## 转换向量格式 ########
 # 由于使用gensim的api进行转换，因此请填写绝对路径
