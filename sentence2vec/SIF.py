@@ -1,6 +1,7 @@
 """smooth inverse frequency (SIF).
 """
 import numpy as np
+import operator
 
 from gensim.models import KeyedVectors
 from sklearn.decomposition import TruncatedSVD
@@ -17,13 +18,16 @@ class Params(object):
         return ' '.join(t)
 
 class SIF(object):
-    def __init__(self, word_file, weight_file, sentences, weight_para=1e-3, rmpc=1):
+    def __init__(self, sentences, word_file, weight_file, weight_para=1e-3, rmpc=1):
+        self.sentences = sentences
         self.word_file = word_file
         self.weight_file = weight_file
-        self.sentences = sentences
         self.weight_para = weight_para if weight_para > 0 else 1.0     # when the parameter makes no sense, use unweighted
         self.rmpc = rmpc
 
+        print('--- generate weight_file ---')
+        self.generate_weight_file()
+        print('--- finish generate weight_file ---')
         print('--- load word vectors ---')
         self.words, self.We = self.getWordmap()
         print('--- finish load word vectors ---')
@@ -34,11 +38,23 @@ class SIF(object):
         self.weight4ind = self.getWeight()  # weight4ind[i] is the weight for the i-th word
         print('--- finish weight4ind ---')
 
+    def generate_weight_file(self):
+        words_dict = {}
+        for item in self.sentences:
+            title = item.split()
+            for word in title:
+                words_dict[word] = words_dict.get(word, 0) + 1
+        sorted_words_dict = sorted(words_dict.items(), key=operator.itemgetter(1), reverse=True)
+
+        with open(self.weight_file, 'w', encoding='utf-8') as f:  # trianpre10kw post10kw test1 test2
+            for word, freq in sorted_words_dict:
+                f.write(word + ' ' + str(freq) + '\n')
+
     def transform(self):
         params = Params()
         params.rmpc = self.rmpc
 
-        x, m = self.sentences2idx(self.sentences, words)  # x is the array of word indices, m is the binary mask indicating whether there is a word in that location
+        x, m = self.sentences2idx()  # x is the array of word indices, m is the binary mask indicating whether there is a word in that location
         w = self.seq2weight(x, m)  # get word weights
         embedding = self.SIF_embedding(x, w, params)
 
@@ -83,10 +99,10 @@ class SIF(object):
                 weight4ind[ind] = 1.0
         return weight4ind
 
-    def sentences2idx(self, sentences, words):
+    def sentences2idx(self):
         seq1 = []
-        for i in sentences:
-            seq1.append(self.getSeq(i, words))
+        for i in self.sentences:
+            seq1.append(self.getSeq(i, self.words))
         x1, m1 = self.prepare_data(seq1)
         return x1, m1
 
