@@ -3,8 +3,8 @@ from sentence2vec import SIF
 
 ######## 转换向量格式 ########
 # 由于使用gensim的api进行转换，因此请填写绝对路径
-glove_file = 'C:/work/learn/sentence2vec/data/glove.840B.300d.txt'    # download from https://nlp.stanford.edu/projects/glove/
-w2v_file = 'C:/work/learn/sentence2vec/data/glove_w2v.840B.300d.txt'
+glove_file = 'C:/data/glove.840B.300d.txt'    # download from https://nlp.stanford.edu/projects/glove/
+w2v_file = 'C:/data/glove_w2v.840B.300d.txt'
 glove2w2v(glove_file, w2v_file)
 ################################
 
