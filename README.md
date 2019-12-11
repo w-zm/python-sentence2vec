@@ -76,5 +76,5 @@ print(len(sentences_embedding), len(sentences_embedding[0]))
 
 ## Other
 
-- 参考的github请见github_list.txt；
+- 涉及的代码大部分参考自原论文仓库并加以封装，请见github_list.txt，侵删；
 - 发现bug或者问题请提issue，谢谢。
