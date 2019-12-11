@@ -28,7 +28,7 @@ CPM<sup>[[2](#reference2)]</sup> (concatenated power mean) | 2018 | Plan
 
 ## 实例
 
-见example.py
+见example_sif.py
 
 example_sif.py:
 
