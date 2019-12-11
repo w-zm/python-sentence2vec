@@ -1,2 +1,3 @@
 .idea/
+sentence2vec/__pycache__
 data/*

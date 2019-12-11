@@ -9,12 +9,11 @@
 
 ## 依赖
 - python 3.6
-
+- numpy 1.17.0
 - gensim 3.6.0
-
 - scikit-learn 0.21.2
 
-上述版本号仅为参考。
+上述版本号仅供参考。
 
 
 
@@ -22,8 +21,8 @@
 
 Model | Year | Status 
 :-: | :-: | :-: 
-SIF<sup>[[1](#reference1)]</sup> (smooth inverse frequency) | 2016 | in progress 
-CPM<sup>[[2](#reference2)]</sup> (concatenated power mean) | 2018 | plan 
+SIF<sup>[[1](#reference1)]</sup> (smooth inverse frequency) | 2016 | Finished 
+CPM<sup>[[2](#reference2)]</sup> (concatenated power mean) | 2018 | Plan 
 
 
 
@@ -77,4 +76,5 @@ print(len(sentences_embedding), len(sentences_embedding[0]))
 
 ## Other
 
-发现bug或者问题请提issue，谢谢。
+- 参考的github请见github_list.txt；
+- 发现bug或者问题请提issue，谢谢。
