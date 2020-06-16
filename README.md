@@ -19,10 +19,10 @@
 
 ## 当前实现
 
-Model | Year | Status 
-:-: | :-: | :-: 
-SIF<sup>[[1](#reference1)]</sup> (smooth inverse frequency) | 2016 | Finished 
-CPM<sup>[[2](#reference2)]</sup> (concatenated power mean) | 2018 | Plan 
+Model | Year | Status | Reference
+:-: | :-: | :-: | :-: 
+SIF<sup>[[1](#reference1)]</sup> (smooth inverse frequency) | 2016 | Finished | https://github.com/PrincetonML/SIF
+CPM<sup>[[2](#reference2)]</sup> (concatenated power mean) | 2018 | Plan | None
 
 
 
@@ -75,6 +75,3 @@ print(len(sentences_embedding), len(sentences_embedding[0]))
 
 
 ## Other
-
-- 涉及的代码大部分参考自原论文仓库并加以封装，请见github_list.txt，侵删；
-- 发现bug或者问题请提issue，谢谢。
